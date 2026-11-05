@@ -83,7 +83,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'rubocop-rails-omakase', require: false
   gem 'simplecov-cobertura'
-  gem 'spree_dev_tools', '>= 1.0.0.beta1'
+  gem 'spree_dev_tools', '>= 1.0.1'
 end
 
 group :development do
