@@ -295,6 +295,9 @@ GEM
       reline (>= 0.4.2)
     jmespath (1.6.2)
     json (2.21.2)
+    json-schema (6.2.1)
+      addressable (~> 2.8)
+      bigdecimal (>= 3.1, < 5)
     json_schemer (2.5.0)
       bigdecimal
       hana (~> 1.3)
@@ -596,6 +599,11 @@ GEM
     rspec-support (3.13.7)
     rspec_junit_formatter (0.8.0)
       rspec-core (>= 3.13, < 4)
+    rswag-specs (2.17.0)
+      activesupport (>= 5.2, < 8.2)
+      json-schema (>= 2.2, < 7.0)
+      railties (>= 5.2, < 8.2)
+      rspec-core (>= 2.14)
     rubocop (1.92.2)
       json (>= 2.3)
       language_server-protocol (~> 3.17.0.2)
@@ -715,7 +723,7 @@ GEM
       wannabe_bool
     spree_dashboard (6.0.2)
       spree (= 6.0.2)
-    spree_dev_tools (1.0.0)
+    spree_dev_tools (1.0.1)
       awesome_print
       brakeman
       database_cleaner
@@ -734,6 +742,7 @@ GEM
       rspec-rails
       rspec-retry
       rspec_junit_formatter
+      rswag-specs
       ruby-lsp (>= 0.23.0)
       simplecov
       spree (>= 6.0.0.beta1)
@@ -852,7 +861,7 @@ DEPENDENCIES
   solid_queue
   spree (~> 6.0)
   spree_dashboard (~> 6.0)
-  spree_dev_tools (>= 1.0.0.beta1)
+  spree_dev_tools (>= 1.0.1)
   spree_easypost (~> 6.0)
   spree_emails (~> 6.0)
   spree_mcp (~> 6.0)
@@ -972,6 +981,7 @@ CHECKSUMS
   irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
   jmespath (1.6.2) sha256=238d774a58723d6c090494c8879b5e9918c19485f7e840f2c1c7532cf84ebcb1
   json (2.21.2) sha256=1f1d3b7cf2b3ba1a69beca0bb6db13d5438b80bff3cd54cdaaa620b9b07c1c6a
+  json-schema (6.2.1) sha256=c0bf6113d772348bfd159fb096950beeb1e1e25aaeea50b676bd45191d8dbdf3
   json_schemer (2.5.0) sha256=2f01fb4cce721a4e08dd068fc2030cffd0702a7f333f1ea2be6e8991f00ae396
   jwt (3.3.0) sha256=44cc34fbc341c148233cf66641522b4bce0dfb1ce55e8073f05c56f44f4ee546
   language_server-protocol (3.17.0.6) sha256=5ef2c0c138f8267e1bc631d3328347d354f96724b0af22f2c79516120443b7f0
@@ -1094,6 +1104,7 @@ CHECKSUMS
   rspec-retry (0.6.2) sha256=6101ba23a38809811ae3484acde4ab481c54d846ac66d5037ccb40131a60d858
   rspec-support (3.13.7) sha256=0640e5570872aafefd79867901deeeeb40b0c9875a36b983d85f54fb7381c47c
   rspec_junit_formatter (0.8.0) sha256=2c505d4a79713d298bc8361532cc3eb3427d9279ffe3f8ceeeeeb72ffc279a20
+  rswag-specs (2.17.0) sha256=a3b2bdf6df89f8741fe4a4ee47ceb1e77dc13e1c96bbe07352117d6e61afa9e3
   rubocop (1.92.2) sha256=14fb31eed143a0dc6f78186c550c1715e81cd38f59d05d1165050e445c1f5382
   rubocop-ast (1.50.0) sha256=b9ca88300da0803ee222ad20cdb30494c0a784eed06fdc35d254b06d662788db
   rubocop-performance (1.27.0) sha256=eeeb1374d062a368ee1c787b70eb0b0cc4b184cb1f8565f424760946146d61ce
@@ -1116,7 +1127,7 @@ CHECKSUMS
   spree_api (6.0.2) sha256=3a7ee6a81c9030e446ab109b01423cf185428ded197ae9d9d9da94bbf9815b4e
   spree_core (6.0.2) sha256=f047f8f8f5574cd6b8faf1c9cd4bf364b5d1bf85a4c53f3b4749b50599350efc
   spree_dashboard (6.0.2) sha256=6737127f12bcf2f6448cec71dcc89aeeb5ff8a6227f2b98032131a47ac4e690c
-  spree_dev_tools (1.0.0) sha256=3cef2feab9f8093ea0acf62ad420439b2f2038d12a375489dc069b95b16fbd72
+  spree_dev_tools (1.0.1) sha256=c562cb3a8e7c88430f95dfa435cf7eff6156d7c6646dc4a27cd43edfb8020c26
   spree_easypost (6.0.2) sha256=3d55b40578bced4b8863575a162212f451b9431b45a1e0884e02a52511f59499
   spree_emails (6.0.2) sha256=06fa747c41b47c93a735882add5d4a78e91b6d5fd340b4d4b31cfc9c527ebbc5
   spree_mcp (6.0.2) sha256=186d7eac502be2d862dc268ec1689ca65a3a1ca868dc24379e645c5d0e4088d8
